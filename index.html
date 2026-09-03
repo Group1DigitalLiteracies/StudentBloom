@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StudentBloom — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html"><h1>StudentBloom</h1></a>
+        <p class="tagline">Take care of your mind, body, and soul. Live your life in full bloom.</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome card">
+      <h2 id="welcome-msg">Welcome back, Mia!</h2>
+      <p class="lead">“Take care of your mind, and your mind will take care of you.”</p>
+    </section>
+
+    <section class="mood-check card">
+      <h3>How are you feeling today?</h3>
+      <p class="muted">It’s okay not to be okay.</p>
+
+      <div class="mood-options" role="radiogroup" aria-label="Mood options">
+        <button class="mood-btn" data-mood="Happy"><img src="assets/icons/happy.svg" alt="Happy"/> <span>Happy</span></button>
+        <button class="mood-btn" data-mood="Okay"><img src="assets/icons/okay.svg" alt="Okay"/> <span>Okay</span></button>
+        <button class="mood-btn" data-mood="Tired"><img src="assets/icons/tired.svg" alt="Tired"/> <span>Tired</span></button>
+        <button class="mood-btn" data-mood="Stressed"><img src="assets/icons/stressed.svg" alt="Stressed"/> <span>Stressed</span></button>
+        <button class="mood-btn" data-mood="Sad"><img src="assets/icons/sad.svg" alt="Sad"/> <span>Sad</span></button>
+      </div>
+
+      <div class="mood-selected" aria-live="polite"></div>
+
+      <textarea id="mood-note" placeholder="Write how you feel or anything on your mind..."></textarea>
+      <div class="mood-actions">
+        <button id="save-mood" class="btn-primary">Save My Mood</button>
+        <a href="mood.html" class="btn-secondary">Go to Mood Check-In</a>
+      </div>
+    </section>
+
+    <section class="quick-access">
+      <h3>Quick Access</h3>
+      <div class="cards-grid">
+        <a class="card small" href="tips.html"><img src="assets/icons/tips.svg" alt="Tips"/><h4>Mental Wellness</h4></a>
+        <a class="card small" href="counsellor.html"><img src="assets/icons/counsellor.svg" alt="Counsellor"/><h4>Talk to a Counsellor</h4></a>
+        <a class="card small" href="activities.html"><img src="assets/icons/activity.svg" alt="Activities"/><h4>Healthy Activities</h4></a>
+        <a class="card small" href="tips.html"><img src="assets/icons/help.svg" alt="Help"/><h4>Health Tips</h4></a>
+      </div>
+    </section>
+
+    <section class="events card">
+      <h3>Upcoming Events</h3>
+      <div class="event-list">
+        <article class="event-card">
+          <h4>Student Leadership & Growth Camp</h4>
+          <p>Adventure awaits! Build confidence, develop leadership and create lasting friendships through our university camping program.</p>
+          <p class="date">Date: July 04, 2026</p>
+          <a class="btn-link" href="events.html">CLICK NOW</a>
+        </article>
+
+        <article class="event-card">
+          <h4>Move For Health</h4>
+          <p>Lace up, show up and run your way to a healthier and happier you!</p>
+          <p class="date">Date: July 13, 2026</p>
+          <a class="btn-link" href="events.html">CLICK NOW</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
