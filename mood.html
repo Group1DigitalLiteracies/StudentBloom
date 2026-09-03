@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mood Check-In — StudentBloom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><h1>StudentBloom</h1></a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>How are you feeling today?</h2>
+      <p class="muted">It’s okay to not be okay.</p>
+    </section>
+
+    <section class="mood-check card">
+      <div class="mood-options" role="radiogroup" aria-label="Mood options">
+        <button class="mood-btn" data-mood="Happy"><img src="assets/icons/happy.svg" alt="Happy"/> <span>Happy</span></button>
+        <button class="mood-btn" data-mood="Okay"><img src="assets/icons/okay.svg" alt="Okay"/> <span>Okay</span></button>
+        <button class="mood-btn" data-mood="Tired"><img src="assets/icons/tired.svg" alt="Tired"/> <span>Tired</span></button>
+        <button class="mood-btn" data-mood="Stressed"><img src="assets/icons/stressed.svg" alt="Stressed"/> <span>Stressed</span></button>
+        <button class="mood-btn" data-mood="Sad"><img src="assets/icons/sad.svg" alt="Sad"/> <span>Sad</span></button>
+      </div>
+
+      <div class="mood-selected" aria-live="polite"></div>
+      <textarea id="mood-note" placeholder="Write how you feel or anything on your mind..."></textarea>
+      <div class="mood-actions">
+        <button id="save-mood" class="btn-primary">Save My Mood</button>
+        <a href="well-being.html" class="btn-secondary">Back to My Well-Being</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
