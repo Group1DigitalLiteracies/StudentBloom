@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — StudentBloom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><h1>StudentBloom</h1></a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card profile-card">
+      <h2 id="profile-name">Mia</h2>
+      <p id="profile-sem">Diploma Sem 1</p>
+      <ul class="profile-info">
+        <li><strong>Full Name:</strong> <span id="full-name">Mia Aurelia Hope</span></li>
+        <li><strong>Email:</strong> <span id="email">Mia@student.com</span></li>
+        <li><strong>Phone Number:</strong> <span id="phone">01-2345 6789</span></li>
+        <li><strong>Semester:</strong> <span id="semester">1</span></li>
+      </ul>
+      <button id="edit-profile" class="btn-primary">Edit Profile</button>
+
+      <form id="edit-form" class="hidden card">
+        <label>Full Name<input id="input-fullname"/></label>
+        <label>Email<input id="input-email"/></label>
+        <label>Phone<input id="input-phone"/></label>
+        <label>Semester<input id="input-sem"/></label>
+        <div class="form-actions">
+          <button id="save-profile" class="btn-primary">Save</button>
+          <button id="cancel-profile" class="btn-secondary" type="button">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
