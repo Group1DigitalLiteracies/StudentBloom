@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Settings — StudentBloom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><h1>StudentBloom</h1></a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Settings</h2>
+    </section>
+
+    <section class="card">
+      <h3>Privacy Settings</h3>
+      <p>Manage what information is stored locally.</p>
+      <label><input id="privacy-save" type="checkbox" checked> Save mood history locally</label>
+    </section>
+
+    <section class="card">
+      <h3>Notification Settings</h3>
+      <label><input type="checkbox" id="notify-check" checked> Reminders for daily check-in</label>
+    </section>
+
+    <section class="card">
+      <h3>Language</h3>
+      <select id="language-select">
+        <option>English</option>
+      </select>
+    </section>
+
+    <section class="card">
+      <h3>Theme</h3>
+      <label><input type="radio" name="theme" value="light" checked> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </section>
+
+    <section class="card">
+      <button id="logout" class="btn-secondary">Log Out</button>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
