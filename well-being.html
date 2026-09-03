@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Well-Being — StudentBloom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><h1>StudentBloom</h1></a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>My Well-Being</h2>
+      <p class="lead">Track your mood, discover tips and take care of yourself.</p>
+    </section>
+
+    <section class="streak card">
+      <h3>Well-Being Streak</h3>
+      <p id="streak-text">—</p>
+    </section>
+
+    <section class="mood-week card">
+      <h3>Mood Tracker</h3>
+      <div class="week-row" id="week-moods">
+        <!-- Bars inserted by JS -->
+      </div>
+      <div class="legend">Monday → Sunday</div>
+    </section>
+
+    <section class="recommended card">
+      <h3>Recommended for You</h3>
+      <div class="cards-grid">
+        <article class="small card">
+          <h4>Exercise Your Mind</h4>
+          <p>Try this 5 minute breathing exercise.</p>
+          <a class="btn-primary" href="#">TRY NOW</a>
+        </article>
+        <article class="small card">
+          <h4>Study Without Stress</h4>
+          <p>Simple tips to manage your time and stay focused.</p>
+          <a class="btn-primary" href="#">READ TIPS</a>
+        </article>
+        <article class="small card">
+          <h4>Sleep Better</h4>
+          <p>Learn how to improve your sleep for a better mind.</p>
+          <a class="btn-primary" href="#">LEARN MORE</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
