@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Talk to a Counsellor — StudentBloom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><h1>StudentBloom</h1></a></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="well-being.html">My Well-Being</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="counsellor.html">Counsellor</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="tips.html">Health Tips</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Talk to a Counsellor</h2>
+      <p class="lead">We’re here to listen and support you.</p>
+    </section>
+
+    <section class="card steps">
+      <ol>
+        <li>Book an appointment</li>
+        <li>Meet with your counsellor</li>
+        <li>Get support and feel better</li>
+      </ol>
+      <p class="muted">All communications are private and confidential.</p>
+      <button id="book-now" class="btn-primary">Book Now!</button>
+    </section>
+
+    <div id="booking-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <h3>Book an appointment (demo)</h3>
+        <p>This is a placeholder booking flow. Your university may have a live booking system.</p>
+        <form id="booking-form">
+          <label>Preferred Date<input type="date" name="date" required></label>
+          <label>Notes<textarea name="notes" placeholder="Anything you'd like the counsellor to know"></textarea></label>
+          <button type="submit" class="btn-primary">Request Appointment</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
